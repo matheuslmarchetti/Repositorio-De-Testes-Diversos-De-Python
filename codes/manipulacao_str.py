@@ -1,6 +1,9 @@
 # emails = 'test0.test@test.com; test1.test@test.com;test2.test@test.com;test2.test@test.com'
-emails = 'test0.test@test.com;test1.test@test.com;test2.test@test.com'
+emails = 'test0.test@test.com,test1.test@test.com;test2.test@test.com'
 emails.strip()
+print(emails)
+emails = emails.replace(',',';')
+print(emails)
 lista_emails = emails.split(';')
 lista_emails_sem_espaco = [email.strip() for email in lista_emails]
 

@@ -6,6 +6,7 @@ def normalize_email(emails):
     lista_emails_sem_espaco = []
 
     emails.strip()
+    emails = emails.replace(',',';')
     lista_emails = emails.split(';')
     lista_emails_sem_espaco = [email.strip() for email in lista_emails]
 
