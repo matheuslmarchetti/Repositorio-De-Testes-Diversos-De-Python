@@ -1,0 +1,28 @@
+---------------Configuração Git e GitHub-----------------
+
+Abra Git Bash.
+
+Insira ls -al ~/.ssh para ver se as chaves SSH existentes estão presentes.
+
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+crie uma senha para o ssh
+
+clip < ~/.ssh/id_ed25519.pub
+
+Gere ssh no github
+
+git config --global user.email "emailnogithub"
+
+git config --global user.name "usergithub"
+
+---------------Comandos Git e GitHub-----------------
+CTRL+INS (Copiar no Git Bash)
+SHIFT+INS (Colar no Git Bash)
+
+git status
+git add .
+git commit -m ''
+git push -u origin main
+git push
+git pull
